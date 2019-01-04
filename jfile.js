@@ -24,7 +24,7 @@ $J.jFile = {
     _state:-1,
     $_s:[],
     errors:["Navegador No soporta", "Demasiados Archivos", "Archivo muy largo", "Archivo no autorizado", "No encontrado", "No leible", "Error de Aborto", "Error de Lectura"],
-    defs:{request:{url: 'uploader.php', type:'POST', paramname:'archivo', params:{}, headers:{}, credentials:undefined}, allowed:[], maxFiles:0, maxFilesSize:5, imgCropResz:false},
+    defs:{request:{url: location.base + '/uploader.php', type:'POST', paramname:'archivo', params:{}, headers:{}, credentials:undefined}, allowed:[], maxFiles:0, maxFilesSize:5, imgCropResz:false},
     queue:[],
     queueProcesing:undefined,
     queueNext:function(){
